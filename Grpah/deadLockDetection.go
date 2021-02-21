@@ -24,7 +24,7 @@ func isDeadLock(G []*GraphVertex) bool {
 }
 func hasCycle(cur *GraphVertex, pre *GraphVertex) bool {
 	if cur.color == gray {
-		return false
+		return true
 	}
 	cur.color = gray
 	//Walk into its neigh vertex
